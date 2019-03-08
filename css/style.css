@@ -90,3 +90,14 @@ img{
 .w3-modal{
 	color:#000;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.flex-container{
+		padding:0;
+	}
+	.flex-container a{
+		width: 100%
+	}
+}
