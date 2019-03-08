@@ -94,11 +94,18 @@ p{
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+  	h1{
+	font-size: 2em;
+	}
+	p{
+		font-size: 1em
+	}
   	.flex-container img{
 	  width: 100vw;
-}
+	}
   	.flex-container{
-		padding:0;
+		padding:15px;
+		padding-bottom: 0;
 	}
 	.flex-container a{
 		width: 80%;
