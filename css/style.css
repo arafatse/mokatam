@@ -1,7 +1,7 @@
 html, body{
 	margin:0;
-	color:#fff;
 	font-family: sans-serif;
+	color:#fff;
 }
 h1{
 	font-size: 40px;
@@ -85,4 +85,8 @@ img{
 }
 .downArrow img{
 	width: 100%
+}
+
+.w3-modal{
+	color:#000;
 }

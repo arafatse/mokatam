@@ -2,6 +2,8 @@
 <html lang="ar" dir="rtl">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>RTC - Resala Training Center</title>
 </head>
@@ -37,7 +39,7 @@
 			</div>		
 		
 	</div>
-	<div class="orgSection">
+	<div class="orgSection" >
 		<div class="flex-container">
 			<h1>
 				تنظيم الكورس وتحديد المواعيد ومتابعة الطلبة خلال الكورس وتقييم المشاريع
@@ -45,7 +47,7 @@
 			<p>
 				من خلال انضمامك ستكتسب مهارات التواصل والخبرة في مجالات مختلفة بسبب تواجدك وتعاملك مع المدربين بشكل مستمبر ومباشر — المغامرة، التغيير، التحدى
 			</p>
-			<a href="#"> 
+			<a href="#id01"onclick="document.getElementById('id01').style.display='block'"> 
 		    <strong>
 		    	تطوع معنا كـ منظم Organizer
 		    </strong>
@@ -63,7 +65,7 @@
 			<p>
 				من خلال التسويق بتتعلم انك تكون مؤثر, صاحب رسالة , معبر ومبدرع— المغامرة، التغيير، التحدى
 			</p>
-			<a href="#"> 
+			<a href="#id01"onclick="document.getElementById('id01').style.display='block'"> 
 		    <strong>
 		    	تطوع معنا كـمسوق Marketeer
 		    </strong>
@@ -82,7 +84,7 @@
 			<p>
 				 بتمثلنا في الؤتمرات وعند الشركات وخلال ممارستك لفن العلاقات العامة بتتعلم فن الاقناع وترتيب الافكار وتوصيلها باكتر من شكل علشان ناسب كل الجهات والمؤسسات والاشخاص— المغامرة، التغيير، التحدى
 			</p>
-			<a href="#"> 
+			<a href="#id01"onclick="document.getElementById('id01').style.display='block'"> 
 		    <strong>
 		    	تطوع معنا كـ PR
 		    </strong>
@@ -104,5 +106,40 @@
 	<div class="downArrow">
 		<img src="https://duckduckgo.com/assets/onboarding/arrow.svg">
 	</div>
+
+	<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">&times;</span>
+        <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/4-alpinist-v2.svg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>الاسم</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="ادخل الاسم رباعي" name="usrname" required>
+          <label><b>رقم الهاتف</b></label>
+          <input class="w3-input w3-border" type="phone" placeholder="ادخل رقم الهاتف" name="psw" required>
+          <label><b>ما هي المهارة التي تريد ان تقدمها</b></label>
+<!--           <input class="w3-input w3-border" type="phone" placeholder="التنظيم او التسويق او العلاقات العامة او التدريب" name="psw" required> 
+ -->          <select class="w3-input w3-border">
+          	<option>
+          		التسويق
+          	</option>
+          	<option>التنظيم</option>
+          	<option>العلاقات العامة</option>
+          	<option>الاستقبال</option>
+          </select>     
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">ارسال استمارة التطوع</button>
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
